@@ -1437,24 +1437,24 @@
     "description": ""
   },
   "d0": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "offset",
+    "output": "value",
+    "description": "Load a single word from data section"
   },
   "d1": {
     "input": "",
-    "output": "",
-    "description": ""
+    "output": "value",
+    "description": "Load a single word specified as immediate value from data section"
   },
   "d2": {
     "input": "",
-    "output": "",
-    "description": ""
+    "output": "size",
+    "description": "Get size of data section"
   },
   "d3": {
-    "input": "",
+    "input": "memOffset | offset | size",
     "output": "",
-    "description": ""
+    "description": "Copy slice of data section to memory"
   },
   "d4": {
     "input": "",
@@ -1519,47 +1519,47 @@
   "e0": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Perform a relative jump"
   },
   "e1": {
-    "input": "",
+    "input": "condition",
     "output": "",
-    "description": ""
+    "description": "Conditionally perform a relative jump"
   },
   "e2": {
-    "input": "",
+    "input": "case",
     "output": "",
-    "description": ""
+    "description": "Perform a relative jump with distance determined by stack value"
   },
   "e3": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Enter function code section"
   },
   "e4": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Return from function code section"
   },
   "e5": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Jump into function code section without altering function stack"
   },
   "e6": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Duplicate value at the top of the stack. Index of item to duplicate is specified as immediate value"
   },
   "e7": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Swaps first and n'th values of the stack. Index of n'th value is specified as immediate value"
   },
   "e8": {
     "input": "",
     "output": "",
-    "description": ""
+    "description": "Swaps two values on the stack. Indexes of values are specified as immediate value"
   },
   "e9": {
     "input": "",
@@ -1577,9 +1577,9 @@
     "description": ""
   },
   "ec": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "value | salt | offset | size",
+    "output": "address",
+    "description": "EOF contract creation"
   },
   "ed": {
     "input": "",
@@ -1587,9 +1587,9 @@
     "description": ""
   },
   "ee": {
-    "input": "",
+    "input": "offset | size",
     "output": "",
-    "description": ""
+    "description": "Return from EOFCREATE context"
   },
   "ef": {
     "input": "",
@@ -1948,19 +1948,19 @@
     "description": ""
   },
   "f7": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "offset",
+    "output": "value",
+    "description": "Load word from returndata"
   },
   "f8": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "address | argsOffset | argsSize | value",
+    "output": "status",
+    "description": "EOF CALL"
   },
   "f9": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "address | argsOffset | argsSize",
+    "output": "status",
+    "description": "EOF DELEGATECALL"
   },
   "fa": {
     "input": "gas | address | argsOffset | argsSize | retOffset | retSize",
@@ -2030,9 +2030,9 @@
     }
   },
   "fb": {
-    "input": "",
-    "output": "",
-    "description": ""
+    "input": "address | argsOffset | argsSize",
+    "output": "status",
+    "description": "EOF STATICCALL"
   },
   "fc": {
     "input": "",
